@@ -33,14 +33,14 @@ while True:
             if 1 <= num <= len(students):
                 course_name = input("Enter Course Name (e.g., BCA): ")
                 students[num - 1]["course"] = course_name
-                print("✅ Course updated successfully!")
+                print("Course updated successfully!")
             else:
-                print("❌ Invalid number!")
+                print("Invalid number!")
                 
     # 3. FEES
     elif choice == '3':
         if len(students) == 0:
-            print("❌ Pehle student add karein!")
+            print(" Pehle student add karein!")
         else:
             print("\n--- Student List ---")
             c = 1
@@ -52,9 +52,9 @@ while True:
             if 1 <= num <= len(students):
                 fee_amt = input("Enter Fee Amount: ")
                 students[num - 1]["fees"] = fee_amt
-                print("✅ Fees updated successfully!")
+                print(" Fees updated successfully!")
             else:
-                print("❌ Invalid number!")
+                print("Invalid number!")
 
     # 4. VIEW STUDENT
     elif choice == '4':
@@ -75,4 +75,4 @@ while True:
         break
         
     else:
-        print("❌ Invalid choice! Enter between 1 to 5.")
+        print(" Invalid choice! Enter between 1 to 5.")
